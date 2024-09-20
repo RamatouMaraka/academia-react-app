@@ -10,7 +10,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
         matrix:
-            os: [Front-1, Front-2]
+            os: [Front_1, Front_2]
     
     steps:
     - name: pull docker image
