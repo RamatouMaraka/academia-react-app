@@ -14,7 +14,7 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build -t hello-world-react .
+      run: docker build -t yacinemathurin/hello-world-react .
     - name: push the image to Dockerhub
       run: docker push yacinemathurin/hello-world-react:latest
       
