@@ -14,7 +14,7 @@ jobs:
     
     steps:
     - name: cleanup non used ressources
-      run: docker system prune -f
+      run: sudo docker system prune -f
     - name: pull docker image 
       run: sudo docker pull yacinemathurin/hello-world-react:latest
     - name: delete old docker container
