@@ -16,7 +16,7 @@ jobs:
     - name: pull docker image 
       run: sudo docker pull yacinemathurin/hello-world-react:latest
     - name: delete old docker container
-      run: sudo docker rm -f react-hello-world || true
+      run: sudo docker rm -f hello-world-react || true
     - name: run docker container
-      run: sudo docker run -d -p 3000:3000 yacinemathurin/hello-world-react:latest
+      run: sudo docker run -d -p 3000:3000 --names hello-world-react yacinemathurin/hello-world-react:latest
       
