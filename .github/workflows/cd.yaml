@@ -13,7 +13,7 @@ jobs:
             os: [Front_1, Front_2]
     
     steps:
-    - name: cleanup non used 
+    - name: cleanup non used ressources
       run: docker system prune -f
     - name: pull docker image 
       run: sudo docker pull yacinemathurin/hello-world-react:latest
